@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                copyToClipboard(true);
+                copyToClipboard();
                 return true;
             }
         });
@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Method for Copy To Clipboard
-    private void copyToClipboard(boolean b) {
+    private void copyToClipboard() {
         String value = null;
-        if (b) {
+        if (true) {
             value = textView.getText().toString();
         }
         if (TextUtils.isEmpty(value)) {
